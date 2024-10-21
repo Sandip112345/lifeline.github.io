@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resource Library</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <div class="logo">
+          <a href="about-us.html">
+            <img src="../resources/lifeline logo.png" alt="LifeLine Logo" />
+          </a>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="resource-library.html">Resource Library</a></li>
+            <li><a href="support-helpline.html">Support/Helpline</a></li>
+            <li><a href="community-forum.html">Community Forum</a></li>
+            <li><a href="about-us.html">About Us</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="resource-library">
+      <h1>Resource Library</h1>
+
+      <section class="search-section">
+        <input
+          type="text"
+          id="search-input"
+          placeholder="Search resources..."
+        />
+        <div id="loading" class="loading" style="display: none">
+          Searching...
+        </div>
+      </section>
+
+      <section id="video-resources" class="resources">
+        <h2>Video Resources</h2>
+        <div class="resource-grid">
+          <div class="resource-item video-item">
+            <h3>Understanding Warning Signs</h3>
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/4Y4LECy8Y5I"
+              frameborder="0"
+              allow="autoplay; encrypted-media"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="resource-item video-item">
+            <h3>Crisis Intervention Techniques</h3>
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/UHms8GYLfn8"
+              frameborder="0"
+              allow="autoplay; encrypted-media"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="resource-item video-item">
+            <h3>Mindfulness Meditation</h3>
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/GjkwrVi_Lj0"
+              frameborder="0"
+              allow="autoplay; encrypted-media"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="resource-item video-item">
+            <h3>Building a Support Network</h3>
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/gaKrutVZ-Xk"
+              frameborder="0"
+              allow="autoplay; encrypted-media"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </section>
+
+      <section id="article-resources" class="resources">
+        <h2>Articles and Publications</h2>
+        <div class="resource-grid">
+          <div class="resource-item article-item">
+            <h3>Suicide Prevention</h3>
+            <p>
+              Learn about suicide prevention strategies and resources from the
+              American Psychiatric Association.
+            </p>
+            <a
+              href="https://www.psychiatry.org/patients-families/suicide-prevention"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="resource-link read-more"
+              >Read Article</a
+            >
+          </div>
+
+          <div class="resource-item article-item">
+            <h3>Coping with Anxiety</h3>
+            <p>Learn effective strategies to manage anxiety...</p>
+            <a
+              href="https://mentalhealthsupportgroups.org/?matchtype=b&gad_source=1&gclid=Cj0KCQjw99e4BhDiARIsAISE7P_AkuYDxotFtc7j3SQC0YN0KLWF2OVRi8KP98IZvHqdWdr7A_AW9tQaAorMEALw_wcB"
+              class="read-more"
+              >Read More</a
+            >
+          </div>
+          <div class="resource-item article-item">
+            <h3>Understanding Depression</h3>
+            <p>Explore the symptoms and treatments for depression...</p>
+            <a
+              href="https://gurudev.artofliving.org/blog/post/from-depression-to-deep-happiness/"
+              class="read-more"
+              >Read More</a
+            >
+          </div>
+          <div class="resource-item article-item">
+            <h3>Mindfulness Techniques</h3>
+            <p>Discover how mindfulness can improve mental health...</p>
+            <a
+              href="https://meditofoundation.org/meditation-challenge?gad_source=1&gclid=Cj0KCQjw99e4BhDiARIsAISE7P8AX58dVLDMTdEcYLLZ0-vKmzp6D7y7Tnijtt-YUnpDioMFBCX11GQaArXpEALw_wcB"
+              class="read-more"
+              >Read More</a
+            >
+          </div>
+          <div class="resource-item article-item">
+            <h3>Building Resilience</h3>
+            <p>Tips for developing emotional resilience...</p>
+            <a
+              href="https://www.advancetheseed.org/blog/the-art-of-staying-motivated-tips-for-consistent-inspiration?gad_source=1&gclid=Cj0KCQjw99e4BhDiARIsAISE7P8SMBTkKNkpcOCI-PEcrSPOzGEtbqMTGxD5kAc3WtrFjNw_koEQ80caAt4HEALw_wcB"
+              class="read-more"
+              >Read More</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <button
+        id="emergency-exit"
+        onclick="window.location.href='https://www.google.com'"
+      >
+        Emergency Exit
+      </button>
+      <p>&copy; 2024 LifeLine. All rights reserved.</p>
+    </footer>
+
+    <script src="../javascript/script.js"></script>
+  </body>
+</html>

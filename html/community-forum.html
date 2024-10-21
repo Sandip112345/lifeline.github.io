@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Forum</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <a href="about-us.html">
+                    <img src="../resources/lifeline logo.png" alt="LifeLine Logo">
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="resource-library.html">Resource Library</a></li>
+                    <li><a href="support-helpline.html">Support/Helpline</a></li>
+                    <li><a href="community-forum.html">Community Forum</a></li>
+                    <li><a href="about-us.html">About Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="forum-page"></main>
+        <h1>Community Forum</h1>
+        
+        <button class="new-discussion-btn">Start a New Discussion</button>
+
+        <div class="forum-container">
+            <section class="forum-category">
+                <h2>General Discussion</h2>
+                <div class="thread-list">
+                    <div class="thread">
+                        <h3><a href="#">Welcome to the Community Forum</a></h3>
+                        <p class="thread-info">Started by Admin, 2 days ago</p>
+                        <p class="thread-preview">Welcome to our supportive community. Please read our guidelines...</p>
+                    </div>
+                    <div class="thread">
+                        <h3><a href="#">Tips for Managing Anxiety</a></h3>
+                        <p class="thread-info">Started by User123, 1 day ago</p>
+                        <p class="thread-preview">I've found some techniques that help me manage anxiety...</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="forum-category">
+                <h2>Depression Support</h2>
+                <div class="thread-list">
+                    <div class="thread">
+                        <h3><a href="#">Coping with Depression During Lockdown</a></h3>
+                        <p class="thread-info">Started by JohnD, 3 days ago</p>
+                        <p class="thread-preview">The isolation during lockdown has been tough. Here's what's helping me...</p>
+                    </div>
+                    <div class="thread">
+                        <h3><a href="#">Success Stories: Overcoming Depression</a></h3>
+                        <p class="thread-info">Started by HopefulHeart, 1 week ago</p>
+                        <p class="thread-preview">I wanted to share my journey of overcoming depression...</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="forum-category">
+                <h2>Stress Management</h2>
+                <div class="thread-list">
+                    <div class="thread">
+                        <h3><a href="#">Meditation Techniques for Beginners</a></h3>
+                        <p class="thread-info">Started by ZenMaster, 4 days ago</p>
+                        <p class="thread-preview">Here are some simple meditation techniques I use to manage stress...</p>
+                    </div>
+                    <div class="thread">
+                        <h3><a href="#">Balancing Work and Mental Health</a></h3>
+                        <p class="thread-info">Started by WorkLifeBalance, 2 days ago</p>
+                        <p class="thread-preview">Struggling to maintain mental health while working from home...</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <div id="new-discussion-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Start a New Discussion</h2>
+            <form id="new-discussion-form">
+                <label for="discussion-title">Title:</label>
+                <input type="text" id="discussion-title" name="title" required>
+                
+                <label for="discussion-category">Category:</label>
+                <select id="discussion-category" name="category" required>
+                    <option value="General Discussion">General Discussion</option>
+                    <option value="Depression Support">Depression Support</option>
+                    <option value="Stress Management">Stress Management</option>
+                </select>
+                
+                <label for="discussion-content">Content:</label>
+                <textarea id="discussion-content" name="content" required></textarea>
+                
+                <button type="submit">Post Anonymously</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <button id="emergency-exit" onclick="window.location.href='https://www.google.com'">Emergency Exit</button>
+        <p>&copy ; 2024 LifeLine. All rights reserved.</p>
+    </footer>
+
+    <script src="../javascript/script.js"></script>
+</body>
+</html>
